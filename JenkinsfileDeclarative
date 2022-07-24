@@ -1,0 +1,30 @@
+pipeline{
+
+    agent any
+
+    tools {
+     maven 'maven3.6.2'
+    }
+
+    options{
+        //Add the timestamp to the console output
+        timestamps()
+        //Discard old buids
+        buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '3', daysToKeepStr: '', numToKeepStr: '3'))
+    }
+    stages{
+      stage('Build'){
+       steps{
+        sh "mvn clean -DskipTests=true package"
+       }
+      }
+      stage('DeployAppIntoTomcatServer'){
+        steps{
+            sshagent(['57e57754-c242-403d-86b7-ffbeec8ee860']) {
+                sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@54.205.135.13:/opt/apache-tomcat-9.0.41/webapps"
+                sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@3.95.173.240:/opt/apache-tomcat-9.0.41/webapps"
+            }
+        }
+      }
+    }
+}
