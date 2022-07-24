@@ -9,29 +9,21 @@
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to Mithun Technologies - GitHub Webhook Demo  .....</h1>
-<h1 align="center"> Welcome to Mithun Software Solutions.......We have a DevOps Master Program demo on June 25th at 7 PM IST for new batch. , This is a weekdays batch - 6.00 AM to 7.30 AM IST . MSS- Very Good Training center for DevOps with AWS in Maratha Halli and also for Job Assitance Job Support also...Teaching Real Time scnerios and use cases... Some fake guys are giving the fake reviews dont believe those guys..I am requesting everyone. Please give your reviews in FB and Google.</h1>
+<h1 align="center">Welcome to TechX</h1>
 <hr>
 <div style="text-align: center;">
 	<span>
-		<img src="images/mithunlogo.jpg" alt="" width="100">
+		<img src="https://www.bing.com/images/search?view=detailV2&ccid=DYCPPKD9&id=E002FB7ACBFF5D3BC471F7569FBC66DE99ABB5E8&thid=OIP.DYCPPKD96R2KSiacNdGxFAHaE8&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.0d808f3ca0fde91d8a4a269c35d1b114%3frik%3d6LWrmd5mvJ9W9w%26riu%3dhttp%253a%252f%252fbuzz2fone.com%252fwp-content%252fuploads%252fimpace.jpg%26ehk%3dw2Zp%252fkH97JOxiLaxi807JRjVMljmuXDNGiU5mi2hRnM%253d%26risl%3d%26pid%3dImgRaw%26r%3d0&exph=2000&expw=3000&q=tech+images&simid=608055292339769374&FORM=IRPRST&ck=13F19F8B98C47F8FC5C57B2C44C8C620&selectedIndex=10" alt="" width="100">
 	</span>
 	<span style="font-weight: bold;">
-		Mithun Software Solutions, 
-		Martha Halli,
-		Bangalore,
-		+91-9980923226,
-		devopstrainingbr@gmail.com
+		TechX,
+		USA
 		<br>
-		<a href="mailto:devopstrainingblr@gmail.com">Mail to Mithun Technologies</a>
 	</span>
 </div>
 <hr>
 	<p> Service : <a href="services/employee/getEmployeeDetails">Get Employee Details </p>
 <hr>
 <hr>
-<p align=center>Mithun Technologies - Consultant, Training, Development Center.</p>
-<p align=center><small>Copyrights 2021 by <a href="http://mithuntechnologies.com/">Mithun Technologies</a> </small></p>
-
 </body>
 </html>
