@@ -4,12 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>MithunTechnologies- Home Page</title>
+<title>Home Page</title>
 <link href="images/mithunlogo.jpg" rel="icon">
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to TechX</h1>
+<h1 align="center">Welcome to TechX Purchase</h1>
 <hr>
 <div style="text-align: center;">
 	<span style="font-weight: bold;">
