@@ -1,3 +1,5 @@
+//https://www.youtube.com/watch?v=EEEiqWolrqQ&list=PLjNII-Jkdjfz5EXWlGMBRk63PC8uJsHMo&index=13
+//https://github.com/cehkunal/webapp
 pipeline {
   agent any
   tools {
