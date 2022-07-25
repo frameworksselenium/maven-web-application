@@ -20,7 +20,7 @@ pipeline {
         sh 'cat trufflehog'
       }
     }
-    stage ('Source Composition Analysis') {
+   /*   stage ('Source Composition Analysis') {
       steps {
          sh 'rm owasp* || true'
          sh 'wget "https://github.com/frameworksselenium/maven-web-application/blob/master/owasp-dependency-check.sh" '
@@ -29,14 +29,14 @@ pipeline {
          sh 'cat /var/lib/jenkins/OWASP-Dependency-Check/reports/dependency-check-report.xml'
       }
     }
-  /*  stage ('SAST') {
+  stage ('SAST') {
       steps {
         withSonarQubeEnv('sonar') {
           sh 'mvn sonar:sonar'
           sh 'cat target/sonar/report-task.txt'
         }
       }
-    }
+    }*/
     stage ('Build') {
       steps {
       sh 'mvn clean package'
@@ -53,9 +53,9 @@ pipeline {
     stage ('DAST') {
       steps {
         sshagent(['zap']) {
-         sh 'ssh -o  StrictHostKeyChecking=no ubuntu@13.232.158.44 "docker run -t owasp/zap2docker-stable zap-baseline.py -t http://13.232.202.25:8080/webapp/" || true'
+         sh 'docker run -t owasp/zap2docker-stable zap-baseline.py -t http://webapp-lb-d9c23638363c0eb7.elb.us-east-1.amazonaws.com/maven-web-application/" || true'
         }
       }
-    }*/
+    }
   }
 }
