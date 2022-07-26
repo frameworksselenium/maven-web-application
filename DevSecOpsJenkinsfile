@@ -1,5 +1,7 @@
 //https://www.youtube.com/watch?v=EEEiqWolrqQ&list=PLjNII-Jkdjfz5EXWlGMBRk63PC8uJsHMo&index=13
 //https://github.com/cehkunal/webapp
+//sonar integration with jenkins
+//https://www.youtube.com/watch?v=wn9wWYAShag
 pipeline {
   agent any
   tools {
@@ -30,15 +32,15 @@ pipeline {
          sh 'bash owasp-dependency-check.sh'
          sh 'cat /var/lib/jenkins/OWASP-Dependency-Check/reports/dependency-check-report.xml'
       }
-    }
+    }*/
   stage ('SAST') {
       steps {
-        withSonarQubeEnv('sonar') {
+        withSonarQubeEnv('SonarQube4.7') {
           sh 'mvn sonar:sonar'
           sh 'cat target/sonar/report-task.txt'
         }
       }
-    }*/
+    }
     stage ('Build') {
       steps {
       sh 'mvn clean package'
