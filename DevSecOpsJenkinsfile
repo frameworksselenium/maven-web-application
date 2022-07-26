@@ -24,7 +24,7 @@ pipeline {
         sh 'cat trufflehog'
       }
     }
-   /*   stage ('Source Composition Analysis') {
+     stage ('Source Composition Analysis') {
       steps {
          sh 'rm owasp* || true'
          sh 'wget "https://github.com/frameworksselenium/maven-web-application/blob/master/owasp-dependency-check.sh" '
@@ -40,7 +40,7 @@ pipeline {
           sh 'cat target/sonar/report-task.txt'
         }
       }
-    }*/
+    }
     stage ('Build') {
       steps {
       sh 'mvn clean package'
